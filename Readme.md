@@ -169,4 +169,120 @@ Dans cet exemple, l'algorithme demande de deviner un nombre. Si tu trouves le bo
 
 
 ---
+---
+
+Le pseudo-code est un langage informel utilisé pour décrire des algorithmes et la logique d'un programme sans s'attacher aux spécificités syntaxiques d'un langage de programmation. Il n'a pas de standard strict, mais voici les structures syntaxiques courantes qui peuvent être utilisées dans un pseudo-code.
+
+1. Variables
+
+Les variables sont déclarées simplement sans typage explicite.
+
+x ← 10  // assigner la valeur 10 à la variable x
+
+2. Affichage
+
+Pour afficher des valeurs ou des messages.
+
+Afficher "Bonjour"
+Afficher x  // afficher la valeur de x
+
+3. Entrée utilisateur
+
+Pour demander des données à l'utilisateur.
+
+x ← Lire()  // lire une valeur entrée par l'utilisateur et l'assigner à x
+
+4. Structures conditionnelles
+
+Si...Sinon (If...Else)
+
+Si (x > 0) alors
+    Afficher "x est positif"
+Sinon
+    Afficher "x est négatif ou nul"
+Fin Si
+
+Si...Sinon Si...Sinon (If...Else If...Else)
+
+Si (x > 0) alors
+    Afficher "x est positif"
+Sinon Si (x < 0) alors
+    Afficher "x est négatif"
+Sinon
+    Afficher "x est égal à 0"
+Fin Si
+
+5. Boucles
+
+Pour (For)
+
+Pour i de 1 à 10 faire
+    Afficher i
+Fin Pour
+
+Tant que (While)
+
+Tant que (x > 0) faire
+    Afficher x
+    x ← x - 1
+Fin Tant que
+
+Répéter...Jusqu'à (Do...While)
+
+Répéter
+    Afficher x
+    x ← x - 1
+Jusqu'à (x = 0)
+
+6. Fonctions
+
+Une fonction est définie avec un nom, des paramètres optionnels, et peut retourner une valeur.
+
+Fonction somme(a, b)
+    Retourner a + b
+Fin Fonction
+
+Appel de fonction :
+
+resultat ← somme(5, 3)
+Afficher resultat  // affiche 8
+
+7. Tableaux (Arrays)
+
+Déclaration et accès aux éléments d'un tableau.
+
+tableau ← [1, 2, 3, 4, 5]
+Afficher tableau[1]  // affiche le deuxième élément du tableau
+
+8. Commentaires
+
+Les commentaires permettent d'expliquer le code. Ils sont ignorés lors de l'exécution.
+
+// Ceci est un commentaire
+
+9. Structures répétitives avec sortie anticipée
+
+Dans certaines boucles, on peut avoir besoin de sortir de la boucle avant qu'elle ne se termine.
+
+Pour i de 1 à 10 faire
+    Si (i = 5) alors
+        Sortir  // quitter la boucle
+    Fin Si
+Fin Pour
+
+10. Structures de données complexes
+
+Enregistrement (Record)
+
+Similaire aux objets ou aux structures en programmation.
+
+Personne
+    nom ← "Alice"
+    âge ← 25
+Fin Personne
+Afficher Personne.nom
+
+Le pseudo-code reste flexible, et l'important est de garder une logique claire et compréhensible, sans trop se soucier de la syntaxe exacte d'un langage de programmation.
+
+
 
